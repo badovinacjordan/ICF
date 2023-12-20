@@ -1,0 +1,168 @@
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=REM:ital,wght@0,500;1,500&family=Zilla+Slab:ital,wght@0,700;1,700&display=swap');
+	html body .outer-wrapper{background: radial-gradient(at top left,#2D368E, #001d33)!important; background-attachment: fixed!important;}
+	.sea-container{font-family: 'Montserrat', sans-serif; padding-bottom: 20px; color: rgba(0,0,0,0.8); line-height: 1.4; font-size: 15px;}
+	.sea-container ul li span{background: transparent!important;}
+	.sea-container img{display: block;}
+	.sea-container ul{padding: 0px 0px 0px 20px;}
+	.navbar-sea{display: flex; gap: 20px; flex-wrap: wrap; font-family: 'REM', sans-serif; text-transform: uppercase; font-weight: 500; padding-bottom: 10px;}
+	.course-flex{margin: 20px 0px; display: flex; gap: 20px;}
+	.course-left{flex: 2;}
+	.course-right{flex: 1; background-color: whitesmoke; border: 1px solid #e7e7e7; flex: 1; padding: 15px;  align-self: flex-start!important; width: 50%;}
+	.right-sea{flex-grow: 2; display: flex; gap: 10px; justify-content: flex-end; align-items: flex-end;}
+	.left-sea img{max-width: 250px!important;}
+	.right-sea img{max-width: 70px!important;}
+	.right-sea a{color: rgba(0,0,0,0.8); font-size: 13px; letter-spacing: 1px; padding-bottom: 7px;}
+	.sea-title.centsea{color: #FFFFFF; text-align: center;}
+	.right-sea a:hover{color: #FFFFFF;}
+	.tagline-sea{background: #2D368E; font-family: 'Montserrat', serif; color: #fff; text-transform: uppercase; text-align: center; padding: 5px 10px; font-size: 21px;}
+	.banner-sea img{width: 100%; height: 200px; object-fit: cover!important;} 
+	.sea-title{font-family: 'Montserrat', serif; font-size: 35px; line-height: 1.0; text-transform: uppercase;}
+	.mini-title-sea{font-family: 'Montserrat', serif; text-transform: uppercase; line-height: 1.4; font-size: 15px; color: #2D368E; font-weight: 900;}
+	.hero-sea{display: flex; flex-wrap: wrap; color: #fff;}
+	.hero-left-sea, .hero-image-sea{flex: 1;}
+	.hero-image-sea img{min-height: 100%; height: 350px; object-fit: cover!important; width: 100%;}
+	.hero-left-sea{padding: 20px; text-align: center; box-sizing: border-box!important; display: flex; flex-direction: column; gap: 10px; justify-content: center; background: radial-gradient(at top left,#2D368E, #001d33);}
+	.sea-body{line-height: 1.4; font-size: 15px;}
+	.sea-links{display: flex; gap: 10px; align-items: center; justify-content: center;}
+	.sea-links a{transition: 0.5s; background: #FBC73F; color: #2D368E; line-height: 1.4; font-size: 15px; padding: 6px 14px; font-weight: 700; text-decoration: none;}
+	.sea-links a:hover{background: #2D368E; color: #FBC73F;}
+	.categories-sea{display: flex; gap: 20px; flex-wrap: wrap; margin-top: 20px;}
+	.categories-sea a{color: #fff; transition: 0.5s; text-align: center; display: flex; flex-direction: column; padding: 30px 20px; align-items: center; justify-content; center;}
+	.categories-sea a img{height: 80px; width: 80px; object-fit: contain!important;}
+	.featured-flex a:hover, .categories-sea a:hover{transform: scale(1.05); box-shadow: 0px 0px 3px rgba(0,0,0, 0.2);}
+	.cat1-sea{background: radial-gradient(at top left,#B20838, #B20838); flex: 1;}
+	.cat2-sea{background: radial-gradient(at top left,#B20838, #B20838); flex: 1;}
+	.cat2-sea:after{content: "Recorded OnDemand Events";}
+	.cat2-sea:hover:after{content: "Coming Soon";}
+	.cat3-sea{background: radial-gradient(at top left,#b63d84, #5a0d3b); flex: 1;}
+	.cat3-sea:after{content: "Masterclasses";}
+	.cat3-sea:hover:after{content: "Coming Soon";}
+	.featured-sea{background: radial-gradient(at top left,#eeeeee, #d0d0d0); flex: 1; padding: 20px; margin-top: 20px;}
+	.featured-flex{display: flex; gap: 20px; flex-wrap: wrap; margin-top: 15px;}
+	.featured-flex a{flex: 1; min-width: 40%; background: #fff; color: rgba(0,0,0,0.8); font-size: 13px; transition: 0.5s;}
+	.featured-flex a img{height: 250px; width: 100%; object-fit: cover!important;}
+	.featured-flex a:nth-of-type(1) img{border-bottom: 4px solid #B20838;}
+	.featured-flex a:nth-of-type(2) img{border-bottom: 4px solid #B20838;}
+	.featured-flex a:nth-of-type(3) img{border-bottom: 4px solid #B20838;}
+	.featured-flex a:nth-of-type(4) img{border-bottom: 4px solid #B20838;}
+	.featured-flex a:nth-of-type(1) .mini-title-sea{color: #B20838;}
+	.featured-flex a:nth-of-type(2) .mini-title-sea{color: #B20838;}
+	.featured-flex a:nth-of-type(3) .mini-title-sea{color: #B20838;}
+	.featured-flex a:nth-of-type(4) .mini-title-sea{color: #B20838;}
+    #footertext{text-align: center; color: #001d33; font-size: 24px; font-style: italic; margin-top: 0;}
+    .courseDescription{margin-left: 15px; line-height: 25px;}
+	/* Sponsor Grid */ 
+	.parent{display: grid; width: 100%; height: auto; gap: 10px;}
+	.div1, .div2, .div3, .div4, .div5, .div6, .div7 {
+		background-color: #f4f4f4;
+		border: 1px solid #ddd;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		overflow: hidden;
+		object-fit: fill;
+	}
+	.div1, .div2, .div3, .div4, .div5, .div6, .div7 img{
+		max-width: 100%;
+		max-height: 100%;
+		padding: 15px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.div1 { grid-area: 1 / 1 / 2 / 2; }
+	.div2 { grid-area: 1 / 2 / 2 / 3; }
+	.div3 { grid-area: 1 / 3 / 2 / 4; }
+	.div4 { grid-area: 2 / 1 / 3 / 2; }
+	.div5 { grid-area: 2 / 2 / 3 / 3; }
+	.div6 { grid-area: 2 / 3 / 3 / 4; }
+	.div7 { grid-area: 3 / 2 / 4 / 3; }
+/* Responsive */
+	@media only screen and (max-width: 850px){
+	.course-flex, .categories-sea, .featured-flex{flex-direction: column;}
+	.hero-sea{flex-direction: column-reverse;}
+	.course-right{width: 100%;}}
+	.flex-padding{padding: 10px;}
+</style>
+<div class="sea-container">
+	<div class="navbar-sea">
+		<div class="left-sea">
+			<a href="https://coachingfederation.org/"><img src="https://i.ibb.co/rHKhtT6/ICF-Horizontal-Full-Color-Horizontal-Full-Color.png"></a>
+		</div>
+		<div class="right-sea">
+		</div>
+	</div>
+	<div class="tagline-sea">
+		Leading the Global Advancement of Coaching
+		<br>
+	</div>
+	<div class="banner-sea">
+		<img src="https://i.ibb.co/vLLhXzb/coaching101.png">
+	</div>
+	<div class="hero-sea">
+		<div class="hero-left-sea">
+			<div class="sea-title">
+				Introduction to Coaching
+			</div>
+			<div class="sea-links">
+				<a href="https://coachingfederation.org/join-icf" target="_blank">BECOME A MEMBER</a>
+				<a href="#" target="_blank">PURCHASE COURSE</a>
+				<a href="#" target="_blank">PURCHASE BUNDLE</a>
+			</div>
+		</div>
+	</div>
+	<div class="course-flex">
+		<div class="course-left">
+           <div class="mini-title-sea">
+            Course Description
+           </div>
+            <p class="courseDescription">
+                ICF Coaching 101 is an introductory course designed for individuals aspiring to become professional coaches, in alignment with the standards of the International Coach Federation (ICF). This course provides a comprehensive overview of the core principles, ethical guidelines, and foundational coaching skills recognized by the ICF. Through a blend of theoretical knowledge and practical application, participants will embark on a transformative journey, exploring various coaching methodologies, communication techniques, and the art of empowering clients.
+            </p>
+			<div class="mini-title-sea">
+		        Learning Objectives
+			</div>
+            <ul>
+                <li><strong>Understand the ICF Framework:</strong> Gain a thorough understanding of the ICF core competencies and code of ethics, and learn how they shape professional coaching practice.</li>
+                <br>
+                <li><strong>Develop Core Coaching Skills:</strong> Acquire fundamental coaching skills including active listening, powerful questioning, and effective communication techniques to facilitate client growth.</li>
+                <br>
+                <li><strong>Explore Coaching Methodologies:</strong> Learn about various coaching methodologies and approaches, and how to apply them in different coaching scenarios.</li>
+                <br>
+                <li><strong>Practice and Professional Standards:</strong> Understand the importance of ethics and professionalism in coaching, including maintaining confidentiality and respecting client autonomy.</li>
+                <br>
+                <li><strong>Client Empowerment and Goal Setting:</strong> Master the art of empowering clients to identify their goals, develop action plans, and foster accountability for sustainable change.</li>
+                <br>
+                <li><strong>Practical Application and Feedback:</strong> Engage in practical coaching sessions with peers, receiving and providing feedback to refine coaching skills.</li>
+                <br>
+                <li><strong>Self-Reflection and Personal Growth:</strong> Encourage self-reflection and personal growth as a coach, understanding the importance of self-awareness in the coaching relationship.</li>
+                <br>
+                <li><strong>Prepare for ICF Credentialing:</strong> Gain insights into the ICF credentialing process and the requirements for becoming a certified coach.</li>
+            </ul>
+		</div>
+		<div class="course-right">
+			<div class="mini-title-sea">
+				<span style="color: rgb(0, 0, 0);">Who should enroll</span>
+			</div>
+			<ul>
+				<li>Aspiring Coaches</li>
+				<li>Existing Coaching Professionals</li>
+                <li>Industry Leaders</li>
+			</ul>
+			<div class="mini-title-sea">
+				<span style="color: rgb(0, 0, 0);">Price</span>
+			</div>
+				Individual Course: $000.00
+			<br>
+				Click here for Bulk Pricing
+			<br>
+			<br>
+			<div class="mini-title-sea">
+				<span style="color: rgb(0, 0, 0);">Course Length</span>
+			</div>
+				4 hours
+		</div>
+	</div>
+	<br>
+    <h6 id="footerText">Professionalism     Collaboration   Humanity    Equity </h6>
+</div>
