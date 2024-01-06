@@ -6,7 +6,7 @@
     html{background-color: #001E60; font-family: 'Montserrat';}
     .main{
         width: 100%;
-        height: 1980px;}
+        height: 2062px;}
     h1#headerh1{
         padding-top: 15px;
         background: linear-gradient(0deg, rgba(0,30,96,1) 0%, rgba(48,57,141,1) 100%);
@@ -215,7 +215,7 @@
         <div class="hero-image">
             <img src="https://cdn.mycrowdwisdom.com/icf/rteImages/MicrosoftTeams-image-1704457114926.png">
         </div>
-        <a href="https://learning.coachingfederation.org/cw/"><div class="button1">Home</div></a>
+        <a href="https://learning.coachingfederation.org/cw/" target="_blank"><div class="button1">Home</div></a>
         <a href="https://learning.coachingfederation.org/cw/faqs?entryId=14414892" target="_blank"><div class="button2">FAQ</div></a>
         <a href="https://coachingfederation.org/contact-us" target="_blank"><div class="button3">Contact</div></a>
     </div><!-- End Header -->
@@ -254,7 +254,9 @@
     <div class="left">
         <h2>Course Description</h2>
         <p class="long">
-            Join ICF and renowned brand expert and Program Facilitator, William Arruda for the ICF Business Development Series 2024: Advanced - OnDemand. BDS: Advanced will help you bring your established coaching business to the next level and open the door for exponential business growth.
+            Join ICF and renowned brand expert and Program Facilitator, William Arruda for the ICF Business Development Series 2024: Advanced - OnDemand. 
+            <br>
+            BDS: Advanced will help you bring your established coaching business to the next level and open the door for exponential business growth.
             </p> 
             <p>As a participant in BDS: Advanced, you will:</p>
         <p><strong>Design New Coaching Products</strong></p>
