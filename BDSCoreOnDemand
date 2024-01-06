@@ -215,7 +215,7 @@
         <div class="hero-image">
             <img src="https://cdn.mycrowdwisdom.com/icf/rteImages/MicrosoftTeams-image-1704457114926.png">
         </div>
-        <a href="https://learning.coachingfederation.org/cw/"><div class="button1">Home</div></a>
+        <a href="https://learning.coachingfederation.org/cw/" target="_blank"><div class="button1">Home</div></a>
         <a href="https://learning.coachingfederation.org/cw/faqs?entryId=14414892" target="_blank"><div class="button2">FAQ</div></a>
         <a href="https://coachingfederation.org/contact-us" target="_blank"><div class="button3">Contact</div></a>
     </div><!-- End Header -->
