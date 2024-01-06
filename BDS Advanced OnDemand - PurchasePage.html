@@ -1,0 +1,496 @@
+<!-- ==== CSS ==== -->
+<style>
+    /* Font */ 
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+    /* Styling */ 
+    html{background-color: #001E60; font-family: 'Montserrat';}
+    .main{
+        width: 100%;
+        height: 2062px;}
+    h1#headerh1{
+        padding-top: 15px;
+        background: linear-gradient(0deg, rgba(0,30,96,1) 0%, rgba(48,57,141,1) 100%);
+        color: #FEBD3B; 
+        width: 100%; 
+        height: 50px; 
+        font-size: 30px; 
+        text-align: center; 
+        margin-top: 0; 
+        border-bottom: 1px solid #27478d;}
+    .header{
+        background-color: #001E60; 
+        color: #30398D;
+        height: 460px;
+    }
+    .hero-image{text-align: center; }
+    .hero-image img{width: 600px; height: 300px; object-fit: cover;border: 4px solid #FEBD3B; margin-top: 15px;}
+    /* Buttons: lms doesn't like displaying things inline -- so buttons have been moved to individual positioning*/ 
+    .button-container{
+        width: 100%; 
+        background-color:#001E60; 
+        text-align: center; 
+        padding-top: 15px;
+        height: 50px;}
+    .button1{
+        color: white; 
+        background-color: #30398D; 
+        width: 100px; 
+        height: 30px; 
+        text-align: center; 
+        padding-top: 5px;
+        font-family: 'Montserrat';
+        font-size: 18px;
+        border: 1px solid #4753c0;
+        position: relative;
+        top: 20px; 
+        left: 270px;
+    }
+    .button1:hover{background-color:#001E60;}
+    .button2{
+        color: white; 
+        background-color: #30398D; 
+        width: 100px; 
+        height: 30px; 
+        text-align: center; 
+        padding-top: 5px;
+        font-family: 'Montserrat';
+        font-size: 18px;
+        border: 1px solid #4753c0;
+        position: relative;
+        top: -10px; 
+        left: 390px;
+    }
+    .button2:hover{background-color:#001E60;}
+    .button3{
+        color: white; 
+        background-color: #30398D; 
+        width: 100px; 
+        height: 30px; 
+        text-align: center; 
+        padding-top: 5px;
+        font-family: 'Montserrat';
+        font-size: 18px;
+        border: 1px solid #4753c0;
+        position: relative;
+        top: -40px; 
+        left: 510px;
+    }
+    .button3:hover{background-color:#001E60;}
+    /* Right */
+    .instructor-image{text-align: center;}
+    .instructor-image img{width: 180px; height: 180px; border-radius: 130px; object-fit: cover;}
+    .instructor-bio{font-size: 12px;}
+   /* .right{
+        background-color: whitesmoke;
+        border: 1px solid #e7e7e7;
+        padding: 15px;
+        width: 250px;
+        position: relative;
+        left: 623px;
+        top: 0px;
+        height: 1000px;}*/
+        .grey-box{
+        background-color: whitesmoke;
+        border: 1px solid #e7e7e7;
+        padding: 15px;
+        width: 250px;
+        position: relative;
+        left: 623px;
+        top: 0px;
+        height:1040px;  
+        }
+    /* Left */
+    .left{
+        background-color: white;
+        width: 613px;
+        position: relative;
+        padding: 15px;
+        left: 10px;
+        top: -1040px;
+        border-left: 1px solid #e7e7e7;
+        border-top: 1px solid #e7e7e7;}
+        .divider{
+            border-bottom: 1px solid #e7e7e7;
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+    /* Styling of Schedule Drop Down */
+    .course-schedule{
+        width: auto;
+        height: 306px;
+        padding-right: 15px;
+    }
+    .schedule-content{
+        display: none;
+        background-color: rgb(247, 247, 247);
+        padding: 15px;
+        border: 1px solid #e7e7e7;
+        height: 300px;
+        width: 850px;
+        overflow-y: scroll;
+    }
+    .schedule-container{
+        display: inline-block; /* fairly certain inline or block display doesn't work within this setup */
+    }
+    h4{color:#001E60;}
+    .html-default h4{
+        margin: 0.33em 0;
+    }
+    .day
+    {
+        width: auto;
+        height: auto;
+        background-color: white;
+        border: 1px solid #ddd;
+        padding: 15px;
+        margin: 5px;
+        margin-bottom: 15px;
+    }
+    .block
+    {
+        padding-left: 10px;
+    }
+    /* Styling of Terms Drop Down */
+    .terms-bold{font-weight: 700; color:#001E60;}
+    .terms-conditions{
+        margin-top: 60px;
+    }
+    .terms-content{
+        display: none;
+        background-color: rgb(247, 247, 247);
+        padding: 15px;
+        border: 1px solid #e7e7e7;
+        height: 310px;
+        width: 850px;
+        overflow-y: scroll;
+    }
+    .terms-accept{
+            color: #001E60;
+            font-style: italic;
+            text-align: center;
+            width: 850px;
+    }
+    h1, h2{color: #001E60;}
+    #h5{
+        font-size: 16px;
+        margin: 0;
+        margin-top: 16px;
+    }
+    #medium{
+        font-weight: 500;
+        padding-left: 15px;
+    }
+    #heavy{
+        font-weight: 600;
+        padding-left: 10px;
+    }
+    #green{
+        background-color: #88b040;
+        color: white;
+        padding: 10px;
+    }
+    #blue{
+        background-color: #51A4C2;
+        color: white;
+        padding: 10px;
+    }
+    #red{
+        background-color: #DE6061;
+        color: white;
+        padding: 10px;
+    }
+    .long{
+        line-height: 30px;
+        width: 599px;
+    }     
+    .small-text{font-size: 15px; color:#001E60;}
+</style>
+<!--- ==== HTML ==== -->
+<!-- Start Main -->
+<div class="main">
+    <!-- Start Header -->
+    <div class="header">
+        <h1 id="headerh1">BDS Advanced - On-Demand!</h1>
+        <div class="hero-image">
+            <img src="https://cdn.mycrowdwisdom.com/icf/rteImages/MicrosoftTeams-image-1704457114926.png">
+        </div>
+        <a href="https://learning.coachingfederation.org/cw/" target="_blank"><div class="button1">Home</div></a>
+        <a href="https://learning.coachingfederation.org/cw/faqs?entryId=14414892" target="_blank"><div class="button2">FAQ</div></a>
+        <a href="https://coachingfederation.org/contact-us" target="_blank"><div class="button3">Contact</div></a>
+    </div><!-- End Header -->
+    <!-- Right Start -->
+    <div class="right">
+        <div class="grey-box">
+                <div class="instructor-image">
+                    <img src="https://media.licdn.com/dms/image/C4E03AQFAPeFzo5OziQ/profile-displayphoto-shrink_200_200/0/1519050282604?e=2147483647&amp;v=beta&amp;t=Lay167Wd_N8ES0HwGVlX-OD3zStbP95d1sAfILOxn1k">
+                </div>
+                <h3>William Arruda</h3>
+                <div class="instructor-bio">
+                    <p>Dubbed the personal branding guru by Entrepreneur magazine, William Arruda is a branding expert, consultant, keynote speaker and trainer. </p>
+                    <p>His innovative work has transformed personal branding into a global industry, thanks to his revolutionary three-step branding methodology that has empowered hundreds of thousands of professionals across the globe.</p>
+                </div>
+                <div class="divider"></div>
+                <h3>Who Should Enroll?</h3>
+                <ul>
+                    <li>Aspiring Leaders</li>
+                    <li>Existing Coaching Professionals</li>
+                    <li>Industry Leaders</li>
+                </ul>
+                <div class="divider"></div>
+                <h3>Price</h3>
+                    $500.00 for Members
+                    <br>
+                    $550.00 for Non-Members
+                <div class="divider"></div>
+                <h3>CCEU</h3>
+                Up to 9 CCE Units in Resource Development
+                <div class="divider"></div>
+                <h3>Course Length</h3>
+                3.5 hours
+        </div>
+    </div><!-- Right End -->
+    <!-- Left Start -->
+    <div class="left">
+        <h2>Course Description</h2>
+        <p class="long">
+            Join ICF and renowned brand expert and Program Facilitator, William Arruda for the ICF Business Development Series 2024: Advanced - OnDemand. 
+            <br>
+            BDS: Advanced will help you bring your established coaching business to the next level and open the door for exponential business growth.
+            </p> 
+            <p>As a participant in BDS: Advanced, you will:</p>
+        <p><strong>Design New Coaching Products</strong></p>
+        <p>Explore innovative opportunities to expand your coaching offerings.</p>
+        <p><strong>Optimize Your Business Model</strong></p>
+        <p>Learn strategies to maximize your coaching business's efficiency and profitability.</p>
+        <p><strong>Stand Out with Video Communications</strong></p>
+        <p>Harness the power of video to set yourself apart in the coaching world.</p> 
+        <p>And much more!</p>
+        <div class="small-text">
+            <p>BDS: Advanced - OnDemand will be made available in late June 2024 after the conclusion of the live course in early June. </p> 
+            <p>Renowned brand expert and BDS Program Facilitator William Arruda will be your guide through this self-paced and flexible course. </p> 
+        </div>
+        <div class="divider"></div>
+        <h2>Learning Objectives</h2>
+        <ul>
+            <li>How to define your IP and leverage it to expand your practice and get new clients</li>
+            <br>
+            <li>How to establish and describe your coaching niche</li>
+            <br>
+            <li>Four valuable frameworks for building your brand evolution plan (Asset inventory, The Four Quadrants Model, Touchpoint Analysis and Net Promoter Score) 
+            </li>
+            <br>
+            <li>How to create and market new offerings and/or new delivery models</li>
+            <br>
+            <li>Ways to increase your visibility with current and new target audiences</li>
+            <br>
+            <li>Proven techniques for demonstrating your thought-leadership and increasing your digital visibility</li>
+            <br>
+            <li>How to use ChatGPT (AI) as your muse, executive assistant, content creator and social media marketer</li>
+        </ul>
+        <!-- Course Schedule Start Removed for OnDemand
+        <div class="course-schedule">
+            <h2>Course Schedule</h2>
+            <div class="schedule-content">
+                <div class="schedule-container">
+                    <div class="day">
+                        <h4 id="green">Day One (3.5 hours)</h4>
+                            <div class="block">
+                            <h5 id="h5">Intro &amp; Module One</h5>
+                            <p id=""><span id="heavy">Uncover Your Brand &amp; Define Your Niche</span></p> 
+                            <p><span id="medium">Start:</span> 10:30 AM <span id="medium">End:</span> 12:00 PM</p>
+                            <p><span id="medium">Duration:</span> 90min.</p>
+                            <div class="divider"></div>
+                            <h5 id="h5">Break</h5>
+                            <p><span id="medium">Start:</span> 12:00 PM <span id="medium">End:</span> 12:30 PM</p>
+                            <p><span id="medium">Duration:</span> 30min.</p>
+                            <div class="divider"></div>
+                            <h5 id="h5">Module Two</h5>
+                            <ul>
+                                <li>Create your Brand ID</li>
+                                <br>
+                                <li>Identify your IP</li>
+                                <br>
+                                <li>LinkedIn PROFILE Best Practices</li>
+                            </ul>
+                            <p><span id="medium">Start:</span> 12:30 PM <span id="medium">End:</span> 2:00 PM</p>
+                            <p><span id="medium">Duration:</span> 90min.</p>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <h4 id="blue">Day Two (3.5 hours)</h4>
+                            <div class="block">
+                                <h5 id="h5">Module Three</h5>
+                                <p><span id="heavy">Welcome - What to Expect - Thank Yous</span></p> 
+                                <p><span id="heavy">Amplify Your Message</span></p>
+                                <ul>
+                                    <li>45 Minute Talk</li>
+                                    <li>15 Minute Activity</li>
+                                    <li>15 Minute Questions</li>
+                                </ul>
+                                <p><span id="medium">Start:</span> 10:30 AM <span id="medium">End:</span> 12:00 PM</p>
+                                <p><span id="medium">Duration:</span> 90min.</p>
+                                <div class="divider"></div>
+                                <h5 id="h5">Break</h5>
+                                <p><span id="medium">Start:</span> 12:00 PM <span id="medium">End:</span> 12:30 PM</p>
+                                <p><span id="medium">Duration:</span> 30min.</p>
+                                <div class="divider"></div>
+                                <h5 id="h5">Module Four</h5>
+                                <ul>
+                                    <li>Sell Authentically</li>
+                                    <li>Use the ROI of Coaching</li>
+                                    <li>Business Planning</li>
+                                </ul>
+                                <p><span id="medium">Start:</span> 12:30 PM <span id="medium">End:</span> 2:00 PM</p>
+                                <p><span id="medium">Duration:</span> 90min.</p>    
+                            </div>   
+                    </div>
+                    <div class="day">
+                        <h4 id="red">Day Three (3.5 hours)</h4>
+                            <div class="block">
+                                <h5 id="h5">Module Five</h5>
+                                <p id=""><span id="heavy">Welcome - What to Expect</span></p> 
+                                <p><span id="medium">Things to look forward to in the future</span></p> 
+                                <ul>
+                                    <li>Grow Your Network</li>
+                                    <li>Social Media Marketing Basics</li>
+                                    <li>Focus on Professional Development</li>
+                                </ul>
+                                <p><span id="medium">Start:</span> 10:30 AM <span id="medium">End:</span> 12:00 PM</p>
+                                <p><span id="medium">Duration:</span> 90min.</p>
+                                <div class="divider"></div>
+                                <h5 id="h5">Break</h5>
+                                <p><span id="medium">Start:</span> 12:00 PM <span id="medium">End:</span> 12:30 PM</p>
+                                <p><span id="medium">Duration:</span> 30min.</p>
+                                <div class="divider"></div>
+                                <h5 id="h5">Module Six &amp; Preview of June Program</h5>
+                                <p><span id="medium">Ramp Up Your Network</span></p>
+                                <p><span id="medium">Start:</span> 12:30 PM <span id="medium">End:</span> 2:00 PM</p>
+                                <p><span id="medium">Duration:</span> 90min.</p>
+                            </div>
+                    </div>
+                    
+                </div>
+            </div>
+          </div> Course Schedule End -->
+        <!-- Terms & Conditions Start-->
+        <div class="terms-conditions">
+            <h2>Terms &amp; Conditions</h2>
+            <div class="terms-content">
+              <div class="terms-bold">
+                  Registration
+              </div>
+              <p>Registration and participation are limited to individuals 18 years or older. </p>
+              <div class="terms-bold">
+                  Virtual Platform 
+              </div>
+              <p>
+                  The International Coaching Federation (ICF) will be hosting the ICF Business Development Series 2024 on the ICF Learning Portal as two live courses and two on-demand courses.  You must register for each part of the series that you would like to participate in on the ICF Learning Portal.  After registration, you will be able to launch the course; however, the entire course will not be available to you until the live session date, if applicable.  
+              </p>
+              <div class="terms-bold">
+                  Payment and Inclusions 
+              </div>
+              <p>
+                  Full payment of the registration fee is required at the time of registration. 
+                  <br><i>ICF member and non-member early bird pricing only applies to the date range of January 7-15, 2024.</i>   
+              </p>
+              <div class="terms-bold">
+                  Core Live Course:  Cancellation and Refund Policy  
+              </div>
+              <ul>
+                  <li>Cancellations must be received in writing by January 21 to be considered for a full refund.</li>
+                  <p>Please note: A $50 USD administrative fee will be deducted from the refund amount.</p>
+                  <li>Cancellations received in writing between January 22 - February 11 will receive a 50% refund.</li>
+                  <p>Please note: A $50 USD administrative fee will be deducted from the refund amount. </p>
+                  <li>Cancellations received in writing after February 12 will not receive a refund.</li>
+                  <p>If canceling for medical reasons, a doctor’s note of explanation must be provided along with your written request. If approved, ICF will refund the full registration fee, but please note that  a $50 USD administrative fee will be deducted from the refund amount. </p>
+                  <li>No shows without documentation will not qualify for a refund of fees. </li>
+                  <br>
+                  <li>Refunds will not be given to those who do not have access to the technology and/or digital connections. </li>
+              </ul>
+              <div class="terms-bold">
+                  Advanced Live Course: Cancellation and Refund Policy 
+              </div>
+              <ul>
+                  <li>Cancellations must be received in writing by <strong>May 5</strong> to be considered for a full refund.</li>
+                  <p>Please note: A $50 USD administrative fee will be deducted from the refund amount. </p>
+                  <li>Cancellations received in writing between <strong>May 6 - May 26</strong> will receive a 50% refund.</li>
+                  <p>Please note: A $50 USD administrative fee will be deducted from the refund amount.</p>
+                  <li>Cancellations received in writing after <strong>May 27</strong> will not receive a refund. </li>
+                  <p>If cancelling for medical reasons, a doctor’s note of explanation must be provided along with your written request.  If approved, ICF will refund the full registration fee, but please note that a $50 USD administrative fee will be deducted from the refund amount.</p>
+                  <li>No shows without documentation will not qualify for a refund of fees. </li>
+                  <li>Refunds will not be given to those who do not have access to the technology and/or digital connections. </li>
+              </ul>
+              <div class="terms-bold">
+                  On-Demand Courses: Cancellation and Refund Policy 
+              </div>
+              <ul>
+                  <li><strong>On-Demand Cancellation: </strong></li>
+                  <p>Refunds will only be granted for the Core and/or Advanced on-demand course within 14 days of purchase.  ICF will refund the full registration fee, but please note that a $50 USD administrative fee will be deducted from the refund amount.</p>
+                  <li><strong>Educational Credit: </strong></li>
+                  <p>Educational credit for the course cannot be claimed for refunded purchases.</p>
+              </ul>
+              <div class="terms-bold">
+                  Official Language/Interpretation Services
+              </div>
+              <p>The official language of the ICF Business Development Series 2024 is English. </p>
+              <p>All materials will be provided in English. </p>
+              <p>Simultaneous interpretation services will be available for attendees in the live course. This service is provided by Wordly, an artificial intelligence (AI) translation platform and can be accessed on your smartphone.</p>
+              <p>Wordly supports 50 languages, which you can browse on their <a href="https://www.wordly.ai/language-interpretation" target="_blank">Website</a>.</p>
+              <div class="terms-bold">
+                  Program/Schedule Changes
+              </div>
+              <p>For reasons beyond the control of ICF, it may be necessary to change program content, speakers and/or time blocks. </p>
+              <p>ICF is not liable for any changes.</p>
+              <div class="terms-bold">
+                  Code of Conduct – Live Attendees
+              </div>
+              <ol>
+                  <li>Attendees are expected to behave professionally. </li>
+                  <br>
+                  <li>Obscene language and/or abusive or threatening behavior directed to any other series attendee, speaker, ICF staff or personnel is not conducive to a learning environment and will not be tolerated. </li>
+                  <br>
+                  <li>Attendees deemed in violation of this policy will be denied access to the live course without a refund.</li>
+                  <br>
+                  <li>To receive educational credits, the attendee then must complete the program as an on-demand (self-study) participant. </li>
+              </ol>
+              <div class="terms-bold">
+                  Proprietary Rights of ICF and Subject Matter Experts
+              </div>
+              <p>
+                  By registering for the ICF Business Development Series 2024, you acknowledge and agree that all content and materials made available by the International Coach Federation ("ICF") and William Arruda, course instructor, at ICF's events and courses, or in ICF’s literary or digital works are protected by copyrights, trademarks, service marks, trade secrets, or other proprietary rights and laws. Except as expressly authorized by ICF, you agree not to sell, license, rent, modify, distribute, copy, reproduce, transmit, publicly display, publicly perform, publish, adapt, edit, or create derivative works from such materials or content. Reproduction, copying, creation of derivative works, or redistribution for commercial purposes of any materials or design elements of ICF’s intellectual property is strictly prohibited without the express written permission of ICF and William Arruda. Permission granted is at ICF’s sole discretion.
+              </p>
+              <p>
+                  By attending the ICF Business Development Series 2024, you consent that your likeness, captured by questions, commentary, photo, or video, can be used by ICF for promotional purposes in print, video and online. 
+              </p>
+              <div class="terms-bold">
+                  Privacy Policy
+              </div>
+              <p>Pursuant to the Canadian Anti-Spam Law (CASL) and the European Union General Data Protection Regulation (GDPR) ICF is seeking your express consent to have your electronic personal information stored in our system and to receive information regarding your activities within the series. By registering for the  ICF Business Development Series 2024, you are expressing your consent for your electronic data to be stored and to receive information regarding these activities.</p>
+              <p>For more information on ICF’s policies, please visit <a href="https://coachfederation.org/policies" target="_blank">https://coachfederation.org/policies</a>
+              </p><div class="terms-bold">
+                  Disclaimer
+              </div>
+              <p>Presenters alone are responsible for the content of their respective program, presentations, and/or handouts which are offered for informational purposes only. The views and opinions expressed in the sessions are not necessarily those of ICF and are not endorsed by ICF. ICF disclaims all legal liability or responsibility for the content expressed in the sessions or materials distributed as a part of the session.</p>
+              <div class="terms-bold">
+                  Damages and Liability
+              </div>
+              <p>
+                  To the fullest extent permitted by applicable law, ICF disclaims any and all liability for any injuries or damages to persons or property resulting from or arising out of an individual’s participation in the series. 
+              </p>
+              <div class="terms-bold">
+                  Anti-Trust
+              </div>
+              <p>ICF recognizes all state and federal Anti-Trust laws.</p>
+              <div class="terms-bold">
+                  Failure to Perform
+              </div>
+              <p>ICF shall not be liable for any failure to perform or any delay in performing its obligations if the failure or delay is due directly or indirectly to any cause beyond the reasonable control of the organization, its employees, agents or representatives which shall include, but is not limited to, the following Acts of God: fire, flood, explosion, accident, civil disturbance or emergency or periods of armed conflict.</p>
+            </div>
+          </div><!-- Terms & Conditions End -->
+          <div class="terms-accept">
+            <p>By purchasing this course, I acknowledge that I agree to these Terms and Conditions.</p>
+        </div>
+        </div> <!-- Left End -->
+        
+</div> <!-- End Main-->
