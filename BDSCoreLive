@@ -190,16 +190,20 @@
         color: white;
         padding: 10px;
     }
+    #greenli{color:#88b040;}
     #blue{
         background-color: #51A4C2;
         color: white;
         padding: 10px;
     }
+    #blueli{color:#51A4C2;}
     #red{
         background-color: #DE6061;
         color: white;
         padding: 10px;
     }
+    #redli{color:#DE6061}
+    #purpleli{color:#7b60de}
     .long{
         line-height: 30px;
         width: 599px;
@@ -303,11 +307,11 @@
                             <div class="divider"></div>
                             <h5 id="h5">Module Two</h5>
                             <ul>
-                                <li>Create your Brand ID</li>
+                                <li id="redli">Create your Brand ID</li>
                                 <br>
-                                <li>Identify your IP</li>
+                                <li id="blueli">Identify your IP</li>
                                 <br>
-                                <li>LinkedIn PROFILE Best Practices</li>
+                                <li id="purpleli">LinkedIn PROFILE Best Practices</li>
                             </ul>
                             <p><span id="medium">Start:</span> 12:30 PM <span id="medium">End:</span> 2:00 PM</p>
                             <p><span id="medium">Duration:</span> 90min.</p>
@@ -333,9 +337,9 @@
                                 <div class="divider"></div>
                                 <h5 id="h5">Module Four</h5>
                                 <ul>
-                                    <li>Sell Authentically</li>
-                                    <li>Use the ROI of Coaching</li>
-                                    <li>Business Planning</li>
+                                    <li id="redli">Sell Authentically</li>
+                                    <li id="blueli">Use the ROI of Coaching</li>
+                                    <li id="greenli">Business Planning</li>
                                 </ul>
                                 <p><span id="medium">Start:</span> 12:30 PM <span id="medium">End:</span> 2:00 PM</p>
                                 <p><span id="medium">Duration:</span> 90min.</p>    
@@ -348,9 +352,9 @@
                                 <p id=""><span id="heavy">Welcome - What to Expect</span></p> 
                                 <p><span id="medium">Things to look forward to in the future</span></p> 
                                 <ul>
-                                    <li>Grow Your Network</li>
-                                    <li>Social Media Marketing Basics</li>
-                                    <li>Focus on Professional Development</li>
+                                    <li id="purpleli">Grow Your Network</li>
+                                    <li id="blueli">Social Media Marketing Basics</li>
+                                    <li id="greenli">Focus on Professional Development</li>
                                 </ul>
                                 <p><span id="medium">Start:</span> 10:30 AM <span id="medium">End:</span> 12:00 PM</p>
                                 <p><span id="medium">Duration:</span> 90min.</p>
