@@ -1,0 +1,161 @@
+<!-- ==== CSS ==== -->
+<style>
+    html{background-color: rgb(51, 61, 141);}
+/* Font */ 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* Responsive */
+
+/* Styling */
+.upper{
+    padding: 15px;
+    background-color: #30398D; 
+    text-align: center; 
+    color: #FEBD3B; 
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 24px;
+    border-bottom: 1px solid #FEBD3B;}
+.header{width: 100%; padding-bottom: 15px; background-color:  #001E60;}
+/* Banner*/ 
+.banner{
+    width: 100%; 
+    background-color:  #001E60; 
+    text-align: center; 
+    color: white;
+    padding: 15px;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    border: 1px solid #4753c0}
+/* Hero Image */
+.hero-image{width: 100%; text-align: center; background-color:  #001E60; padding-top: 15px;}
+.hero-image img{
+    width: 60%; 
+    height: 300px; 
+    object-fit: cover; 
+    border: 3px solid #FEBD3B;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to right, #FEBD3B, #bb7d01);}
+/* Content */
+.content{
+    background-color: white; 
+    padding: 15px; 
+    font-family: 'Montserrat';
+    text-indent: 15px;
+}
+h1{
+    text-align: center; 
+    margin-top: 0; 
+    background-color:  #001E60; 
+    color: white; 
+    padding-top: 10px;
+    height: 5%;
+    font-size: clamp(1rem, 3vw, 2rem); /* Adjusts between 1.5rem and 3rem based on the viewport width */
+}
+
+}
+h2{
+    text-align: center; 
+    margin-top: 0;
+    background-color: #30398D;
+    color: white;
+}
+h3, h4{color:#30398D;}
+span{
+    font-weight: 400;
+    color: black;
+    font-size: 16px;
+}
+span #blue{color: #30398D; font-size: 14px;}
+.side-by-side{display: flex;}
+.left{
+    background-color: rgb(253, 253, 253);
+    padding: 15px;
+    flex: 1;
+    box-sizing: border-box;
+    border: 1px solid rgb(233, 233, 233);
+    border-right: none;
+}
+.presenter a{text-decoration: none;}
+.presenter-img img{border-radius: 100px; width: 150px; height: 150px;}
+.bio{margin-top: 15px;}
+.bio-text{
+    font-size: 14px; 
+    background-color: whitesmoke; 
+    padding: 0 15px 0px 15px; 
+    border: 1px solid #e7e7e7;}
+.right{ 
+    background-color: rgb(253, 253, 253);
+    padding: 15px;
+    flex: 1;
+    box-sizing: border-box;
+    border: 1px solid rgb(233, 233, 233);
+}
+#prework{
+    background-color: whitesmoke;
+    border: 1px solid #e7e7e7;
+    width: 860px;
+    height: 600px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    color: black;
+    overflow-y: scroll;
+    margin-top: 34px;
+}
+
+/* Styling of Prework Dropdown */ 
+h3#preworkh3{background-color:#001E60; padding: 15px; color: white;}
+h4#preworkh4{text-align:start; padding-top: 0; margin-top: 0;}
+.preworkText{padding: 15px; background-color: white; color: black;}
+p{text-align: start;}
+img#newspaper{height: 200px; width: 250px;}
+
+</style>
+<!-- ==== Javascript  DOESN'T WORK ON YMLEARNING ==== -->
+<!-- ==== HTML ==== -->
+<!-- Main Start -->
+<div class="main">
+        <div class="upper">Congratulations! You are Enrolled.</div>
+        <!-- Header Start -->
+        <div class="header">
+            <!-- Banner Start -->
+            <!-- Banner End -->
+            <!-- Hero Image Start -->
+            <div class="hero-image">
+                <img src="https://cdn.mycrowdwisdom.com/icf/rteImages/MicrosoftTeams-image-1704457114926.png">
+            </div>
+            <!-- Hero Image End-->
+                <!-- Button Container Start 
+                <div class="button-container">
+                    <a href="https://learning.coachingfederation.org/cw/"><div class="button">Home</div></a>
+                    <a href="https://learning.coachingfederation.org/cw/faqs?entryId=14414892" target="_blank"><div class="button">FAQ</div></a>
+                    <a href="https://coachingfederation.org/contact-us" target="_blank"><div class="button">Contact</div></a>
+                </div> Button Container End -->
+            </div>
+        </div>
+        <!-- Header End -->
+        <!-- Content Start-->
+        <div class="content">
+            <h1>ICF Business Development Series (BDS) 2024: Core - Live Course</h1>
+                    <h2>Course Information</h2>
+                    <h3>Date: <span>February 20-22, 2024</span></h3>
+                    <h3>Time: <span>10:30 a.m. – 2 p.m. (Each Day)</span></h3>
+                    <h2>Course Instructions</h2>
+                    <h4>Daily Session Access: </h4>
+                        <ul>
+                            <li>Return here each day for sessions.</li>
+                            <br>
+                            <li>Click <strong>Launch Course</strong> below to start the event.</li>
+                        </ul>
+                    <h4>Learner Experience: </h4>
+                        <ul>
+                            <li>Synchronous online live sessions, peer support, small group discussions, and real-time Q&amp;A.</li>
+                            <br>
+                            <li>Recording to be made available one week after session is complete.</li>
+                        </ul>
+        </div>
+        <!-- Content End -->
+</div>
+<!-- Main End -->
