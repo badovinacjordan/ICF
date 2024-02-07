@@ -54,7 +54,6 @@ h1{
     font-size: clamp(1rem, 3vw, 2rem); /* Adjusts between 1.5rem and 3rem based on the viewport width */
 }
 
-}
 h2{
     text-align: center; 
     margin-top: 0;
