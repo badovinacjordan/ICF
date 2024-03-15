@@ -1,0 +1,254 @@
+<!-- CSS -->
+<style>
+  /* Font */ 
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+ 
+ *{
+   margin: 0;
+   padding: 0;
+ }
+ html{
+   background-color: #ebebeb; 
+   font-family: 'Montserrat';
+ }
+ .container{background-color: rgb(255, 255, 255);}
+ .header{
+   background-color:#2d368e;
+ }
+ .header-img img{
+   width: 100%;
+   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+ }
+ /* Responsive */
+ @media (max-width: 375px) {
+  .tech-slideshow {
+      display: none;
+  }
+}
+ /* Slide Show */
+ .tech-slideshow {
+   height: 30%;
+   max-width: 100%;
+   margin: 0 auto;
+   position: relative;
+   overflow: hidden;
+   transform: translate3d(0, 0, 0);
+   border-top: solid 11px #FEBD3B;
+   border-bottom: solid 11px #FEBD3B;
+ }
+ 
+ .tech-slideshow > div {
+   height: 400px;
+   width: 4934px;
+   background: url('https://i.ibb.co/F4X0CxQ/banner.png');
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   transform: translate3d(0, 0, 0);
+ }
+ .tech-slideshow .mover-1 {
+   animation: moveSlideshow 35s linear infinite;
+ }
+ .tech-slideshow .mover-2 {
+   opacity: 0;
+   transition: opacity 0.5s ease-out;
+   background-position: 0 -200px;
+   animation: moveSlideshow 15s linear infinite;
+ }
+ .tech-slideshow:hover .mover-2 {
+   opacity: 1;
+ }
+ 
+ @keyframes moveSlideshow {
+   100% { 
+     transform: translateX(-66.6666%);  
+   }
+ }
+ /* Slide Show End */ 
+ .content{
+   background-color: rgb(247, 247, 247);
+   height: 100vh;
+   margin-left: 2%;
+   margin-right: 2%;
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   height: auto;
+   padding-bottom: 2rem;
+ }
+ /* Content Block */
+ .calendar-container{
+   margin: 1rem;
+ }
+ img#outlook{
+   width: 10%; 
+   margin-right: 2rem;
+   margin-top: 1rem;
+ }
+ img#outlook:hover{
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+ }
+ img#google{
+   width: 10%;
+   margin-top: 1rem;
+ }
+ img#google:hover{
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+ }
+ /* Text Block */ 
+ .text-block{
+    margin-top: 0;
+    padding: 1rem 2rem 2rem 2rem;
+    line-height: 2rem;
+    text-align: left;
+    text-indent: 0;
+ }
+ .text-block p{
+  margin: 1rem;
+ }
+ h3{
+   background-color: #2d368e;
+   color: #fff;
+   padding: 1rem;
+ }
+ h3.white{
+  background: transparent;
+  color: #1e1e1e;
+  margin-top: -1rem;
+  margin-left: 0rem;
+  padding: 0;
+ }
+ h3.white-tab{
+  background: transparent;
+  color: #1e1e1e;
+  margin-top: -1rem;
+  margin-left: 2rem;
+  padding: 0;
+ }
+ .schedule{
+   background-color: #e7e7e7;
+   height: 40%;
+   overflow-y: scroll;
+ }
+ .schedule-block{
+   background-color: #fff;
+   padding: 1rem;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+   margin-left: 10%; 
+   margin-right: 10%;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+   line-height: 1.5rem;
+   border: 2px solid #9795c9;
+ }
+ .schedule-content{
+   margin: 1rem;
+ }
+ .schedule-content li{
+   margin-left: 2rem;
+   line-height: 1.5rem;
+ }
+ .blue{
+   color: #2d368e;
+ }
+ .black{
+  color: #1e1e1e;
+  font-weight: 500;
+ }
+ .heavy{
+   font-weight: 500;
+ }
+ ul{
+  margin-left: 2rem;
+ }
+ /* Keynote Styling */
+ .speaker{
+  margin-left: 1rem;
+ }
+ .speaker-headshot img{
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+  object-fit: cover;
+  margin-top: 1rem;
+ }
+ .speaker-name{
+  margin-top: .25rem;
+  color: #1e1e1e;
+  font-weight: 600;
+ }
+ .speaker-info{
+  color: #1e1e1e;
+ }
+ .speaker-h3{
+  width: 45%;
+  padding: .25rem;
+  padding-left: 1rem;
+  margin-top: 1rem;
+  clip-path: polygon(0% 0%, 100% 0%, calc(100% - 20px) 50%, 100% 100%, 0% 100%);
+ }
+ .button-singapore{
+  display: flex;
+  width: 50%;
+  text-align: center;
+  align-items: center;
+ }
+ a{text-decoration: none;}
+ </style>
+ <!-- HTML -->
+ 
+ <!-- Header End -->
+ <div class="container">
+   <div class="header">
+     <div class="header-img"><img src="https://i.ibb.co/wWrXR4g/GLF24-Landing-Page-Header.jpg"></div>
+   </div>
+   <div class="content">
+       <!-- Slide Show Start -->
+     <div class="tech-slideshow">
+       <div class="mover-1"></div>
+     </div><!-- Slid Show End-->
+     <!-- Content Block Start -->
+     <div class="content-block">
+        <h3>Welcome to the Global Leaders Forum 2024 (GLF 24) -&nbsp; Option 2</h3>
+        <div class="text-block">
+          <h3 class="white">Singapore:</h3>
+          <h3 class="white-tab">Date: <span class="blue">April 18th &amp; 19th, 2024</span></h3>
+          <h3 class="white-tab">Time: <span class="blue">9:00 AM - 12:00 PM SST</span></h3>
+          <h3 class="white">New York:</h3>
+          <h3 class="white-tab">Date: <span class="blue">April 17th &amp; 18th, 2024</span></h3>
+          <h3 class="white-tab">Time: <span class="blue">9:00 PM - 12:00 AM ET</span></h3>
+          <h2 class="blue">To our Global Leaders</h2>
+          <p class="heavy">ICF takes pride in the work of our volunteers. You are the backbone of our organization and are central to our mission and vision. Like the impact of coaching, your contributions ripple out to the individuals you serve at ICF. And the impact of those contributions' spreads further across the larger ICF ecosystem and into your communities and society.</p>
+          <p class="heavy">We want to equip you with the tools and resources to amplify your impact and widen the ripple effect. For this year’s ICF Global Leaders Forum (GLF 24), we are inviting all volunteer leaders across the ICF ecosystem to help us create a more diverse, inclusive culture that spreads a positive impact throughout ICF, the coaching profession, and the world. Will you join us?</p><p class="heavy"><span><strong>If you feel like you should have access to this course and cannot register please reach out to support@coachingfederation.org.</strong></span></p>
+          <h2 class="blue">Learning Objectives</h2>
+          <ul>
+              <li>Understanding my personal leadership influence on engagement.</li>
+              <li>Exploring the role of social connections in team dynamics.</li>
+              <li>Implementing strategies for building better engagement and belonging.</li>
+          </ul>
+          <h2 class="blue">Keynote Speakers</h2>
+          <div class="speaker">
+            <h3 class="speaker-h3">Day One</h3>
+            <div class="speaker-headshot">
+              <img src="https://i.ibb.co/HPNbjmg/Jennifer-Garvey-Berger-Headshot.jpg">
+            </div>
+            <div class="speaker-name">Jennifer Garvey Berger, EdD</div>
+            <div class="speaker-title">Cultivating your Leadership Strengths</div>
+          </div>
+         <div class="speaker">
+          <h3 class="speaker-h3">Day Two</h3>
+          <div class="speaker-headshot">
+            <img src="https://i.ibb.co/pW4Z18d/Irving-Washington.jpg">
+          </div>
+          <div class="speaker-name">Irving Washington, FASAE, CAE</div>
+          <div class="speaker-title">The Power of Social Connections: Enhancing Volunteer Engagement</div>
+         </div>
+        </div><!-- Text Block End -->
+        <div class="button-singapore">
+          <a href="https://learning.coachingfederation.org/cw/course-details?entryId=14502138"><h3>Click to Access GLF24 New York Time</h3></a>
+        </div>
+     </div><!-- Content Block End -->
+   </div><!-- Content End -->
+ </div><!-- Container End -->
+
+ <head></head>
+ <body></body>
