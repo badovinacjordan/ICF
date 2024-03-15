@@ -1,0 +1,319 @@
+<!-- CSS -->
+<style>
+  /* Font */ 
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+ 
+ *{
+   margin: 0;
+   padding: 0;
+ }
+ html{
+   background-color: #ebebeb; 
+   font-family: 'Montserrat';
+ }
+ .container{background-color: rgb(255, 255, 255);}
+ .header{
+   background-color:#2d368e;
+ }
+ .header-img img{
+   width: 100%;
+   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+ }
+ /* Slide Show */
+ .tech-slideshow {
+   height: 30%;
+   max-width: 100%;
+   margin: 0 auto;
+   position: relative;
+   overflow: hidden;
+   transform: translate3d(0, 0, 0);
+   border-top: solid 11px #FEBD3B;
+   border-bottom: solid 11px #FEBD3B;
+ }
+ 
+ .tech-slideshow > div {
+   height: 400px;
+   width: 4934px;
+   background: url('https://i.ibb.co/F4X0CxQ/banner.png');
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   transform: translate3d(0, 0, 0);
+ }
+ .tech-slideshow .mover-1 {
+   animation: moveSlideshow 35s linear infinite;
+ }
+ .tech-slideshow .mover-2 {
+   opacity: 0;
+   transition: opacity 0.5s ease-out;
+   background-position: 0 -200px;
+   animation: moveSlideshow 15s linear infinite;
+ }
+ .tech-slideshow:hover .mover-2 {
+   opacity: 1;
+ }
+ 
+ @keyframes moveSlideshow {
+   100% { 
+     transform: translateX(-66.6666%);  
+   }
+ }
+ /* Slide Show End */ 
+ .content{
+   background-color: rgb(247, 247, 247);
+   height: 100vh;
+   margin-left: 15%;
+   margin-right: 15%;
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   height: auto;
+   padding-bottom: 2rem;
+ }
+ /* Content Block */
+ .calendar-container{
+   margin: 1rem;
+ }
+ img#outlook{
+   width: 10%; 
+   margin-right: 2rem;
+   margin-top: 1rem;
+ }
+ img#outlook:hover{
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+ }
+ img#google{
+   width: 10%;
+   margin-top: 1rem;
+ }
+ img#google:hover{
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+ }
+ /* Text Block */ 
+ .text-block{
+   padding: 2rem;
+   line-height: 2rem;
+   text-align: left;
+   text-indent: 0;
+ }
+ .text-block p{
+  margin: 1rem;
+ }
+ h3{
+   background-color: #2d368e;
+   color: #fff;
+   padding: 1rem;
+ }
+ /* Schedule */
+ .schedule-button{
+  color: white;
+  width: 100%;
+  background-color: #2d368e;
+  height: 5%;
+  border: none;
+ }
+ .schedule-button:hover{
+  background-color: #20255f;
+ }
+ .schedule{
+   background-color: #efefef;
+   display: none;
+   padding: 1rem;
+ }
+ .schedule-block{
+   background-color: #fff;
+   padding: 1rem;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+   margin-left: 10%; 
+   margin-right: 10%;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+   line-height: 1.5rem;
+   border: 2px solid #9795c9;
+ }
+ .schedule-content{
+   margin: 1rem;
+ }
+ .schedule-content li{
+   margin-left: 2rem;
+   line-height: 1.5rem;
+ }
+ .blue{
+   color: #2d368e;
+ }
+ .heavy{
+   font-weight: 500;
+ }
+ </style>
+ <!-- HTML -->
+ <div class="container">
+   <div class="header">
+     <div class="header-img"><img src="https://i.ibb.co/wWrXR4g/GLF24-Landing-Page-Header.jpg"></div>
+   </div><!-- Header End -->
+   <div class="content">
+       <!-- Slide Show Start -->
+     <div class="tech-slideshow">
+       <div class="mover-1"></div>
+     </div><!-- Slide Show End -->
+     <!-- Content Block Start -->
+     <div class="content-block">
+        <h3>Event Overview</h3>
+        <div class="text-block">
+          <h2 class="blue">Welcome to the International Coaching Federation (ICF) Global Leaders Forum 2024 (GLF 24)</h2>
+          <p class="heavy">A virtual, two-day gathering where ICF volunteer leaders worldwide unite to explore and elevate their leadership skills. You are the backbone of our organization and are central to our mission and vision. Like the impact of coaching, your contributions ripple out to the individuals you serve at ICF. GLF24 is dedicated to strengthening leadership capabilities, sharing best practices, fostering professional development and connecting our ICF volunteer leaders globally. </p>
+        </div>
+     </div>
+     <!-- Content Block End -->
+     <!-- Content Block Start -->
+     <div class="content-block">
+       <h3>Day One Overview</h3>
+       <div class="text-block">
+        <h2 class="blue">Explore Individual Motivations for Involvement</h2>
+        <p class="heavy">Date: <span class="blue">April 18th, 2024</span> Time: <span class="blue">9:00 AM - 12:00 PM SST</span></p>
+        <p class="heavy">Date: <span class="blue">April 17th, 2024</span> Time: <span class="blue">9:00 PM - 12:00 AM ET</span></p>
+        <p class="heavy">With Jennifer Garvey Berger, EdD CEO of Cultivating Leadership, and author of “Unleash your Complexity Genius.”</p>
+        <p>In this session, we will learn and engage in discussions on how to grow our capacities needed for the world in which we live. We have evolved to be brilliant at handling complexity, uncertainty, and change. The only problem is that facing complexity dulls our brilliance just as we need it most. We’ll explore—and try out—strategies and approaches to unleash our natural genius—for ourselves and for our clients. Along the way, we’ll discover that when we tap into our complexity genius, we create the conditions for intentional evolution in ourselves and our clients.</p>
+        <button id="schedule-button1" class="schedule-button"><h2>Click to View Day One Schedule</h2></button> 
+      </div>
+       
+       <!--  Day 1 Schedule Start -->
+       <div id="schedule1" class="schedule">
+          <div class="schedule-block">
+            <h3>Day 1: April 18th (Singapore) / April 17th (New York)</h3>
+          </div>
+           <div class="schedule-block">
+             <h4>Time: <span class="blue">9:00 AM - 9:10 AM SST</span></h4>
+             <h4>Time: <span class="blue">9:00 PM - 9:10 PM ET</span></h4>
+             <h4>Duration: <span class="blue">10 Minutes</span></h4>
+             <h4 class="blue">Welcome &amp; Program Overview</h4>
+           </div>
+           <div class="schedule-block">
+             <h4>Time: <span class="blue">9:10 AM - 9:30 AM SST</span></h4>
+             <h4>Time: <span class="blue">9:10 PM - 9:30 PM ET</span></h4>
+             <h4>Duration: <span class="blue">20 Minutes</span></h4>
+             <h4>Exploration: <span class="blue">What Engagement and Belonging Means to You</span></h4>
+           </div>
+           <div class="schedule-block">
+             <h4>Time: <span class="blue">9:30 AM - 11:00 AM SST</span></h4>
+             <h4>Time: <span class="blue">9:30 PM - 11:00 PM ET</span></h4>
+             <h4>Duration: <span class="blue">90 Minutes</span></h4>
+             <h4>Keynote: <span class="blue">Cultivating your Leadership Strengths</span></h4>
+             <h4>Speaker: <span class="blue">Jennifer Garvey Berger, EdD </span></h4>
+           </div>
+           <div class="schedule-block">
+             <h4>Time: <span class="blue">11:00 AM - 11:15 AM SST</span></h4>
+             <h4>Time: <span class="blue">11:00 PM - 11:15 PM ET</span></h4>
+             <h4>Duration: <span class="blue">15 Minutes</span></h4>
+             <h4>Intermission: <span class="blue">Refresh and Recharge</span></h4>
+           </div>
+           <div class="schedule-block">
+             <h4>Time: <span class="blue">11:15 AM - 11:55 AM SST</span></h4>
+             <h4>Time: <span class="blue">11:15 PM - 11:55 PM ET</span></h4>
+             <h4>Duration: <span class="blue">40 Minutes</span></h4>
+             <h4>Leadership Update: <span class="blue">ICF Brand Positioning - Engaging Future Generations</span></h4>
+           </div>
+           <div class="schedule-block">
+             <h4>Time: <span class="blue">11:55 AM - 12:00 PM SST</span></h4>
+             <h4>Time: <span class="blue">11:55 PM - 12:00 AM ET</span></h4>
+             <h4>Duration: <span class="blue">5 Minutes</span></h4>
+             <h4 class="blue">Closing Reflections</h4>
+           </div>
+       </div>
+         <div class="calendar-container">
+          <h4 class="blue">Click the Calendar Icon below to Add this Event to your Calendar</h4>
+           <a href="https://e.plusthis.com/r/5472-oWMIrAs8pkVcE3hzO6Ap4WItEuloz9VxMz7UdlrC/calendar?calType=ics&amp;Id=~Contact.Id~"><img id="outlook" src="https://res.cloudinary.com/apideck/image/upload/v1686755263/marketplaces/cjfiejqup3y6m09322stelgxd/listings/Outlook-Calendar-Logo_dkmwml.png"></a>
+            <a href="https://e.plusthis.com/r/5472-oWMIrAs8pkVcE3hzO6Ap4WItEuloz9VxMz7UdlrC/calendar?calType=google&amp;Id=~Contact.Id~" target="_blank"><img id="google" src="https://static-00.iconduck.com/assets.00/google-calendar-icon-2048x2048-2mlvsa6u.png"></a>
+         </div>
+       <!-- Day 1 Schedule End -->
+     </div>
+     <!-- Content Block End -->
+         <!-- Content Block Start -->
+     <div class="content-block">
+       <h3>Day Two Overview</h3>
+       <div class="text-block">
+        <h2 class="blue">Delve into Creating Engaged Teams</h2>
+        <p class="heavy">Date: <span class="blue">April 19th, 2024</span> Time: <span class="blue">9:00 AM - 12:00 PM SST</span></p>
+        <p class="heavy">Date: <span class="blue">April 18th, 2024</span> Time: <span class="blue">9:00 PM - 12:00 AM ET</span></p>
+        <p class="heavy">With Irving Washington, renowned for his TED Talks on Leadership. Explore social connections, authentic leadership, and fostering trust. Our day concludes with a Leadership Update on the launch of a new ICF ecosystem platform designed to cultivate community, member and leader engagement.</p>
+        <p>Social connection is a universal human need and a key driver of well-being across cultures. In volunteer settings, where motivation comes from the heart, strong social connections can foster a sense of purpose, engagement, and belonging. Explore how global research on well-being highlights the role of social connections in building strong, collaborative volunteer teams and gain a deeper understanding of the importance of prioritizing social connections alongside the traditional focus on tasks and efficiency.</p>
+        <button id="schedule-button2" class="schedule-button"><h2>Click to View Day Two Schedule</h2></button> 
+      </div>
+       <!--  Day 2 Schedule Start -->
+       <div id="schedule2" class="schedule">
+        <div class="schedule-block">
+          <h3>Day 2: April 19th (Singapore) / April 18th (New York)</h3>
+        </div>
+           <div class="schedule-block">
+             <h4>Time: <span class="blue">9:00 AM - 9:05 AM SST</span></h4>
+             <h4>Time: <span class="blue">9:00 PM - 9:05 PM ET</span></h4>
+             <h4>Duration: <span class="blue">5 Minutes</span></h4>
+             <h4 class="blue">Recap and Reflections</h4>
+           </div>
+           <div class="schedule-block">
+             <h4>Time: <span class="blue">9:05 AM - 10:05 AM SST</span></h4>
+             <h4>Time: <span class="blue">9:05 PM - 10:05 PM ET</span></h4>
+             <h4>Duration: <span class="blue">60 Minutes</span></h4>
+             <h4>Keynote: <span class="blue">The Power of Social Connections: Enhancing Volunteer Engagement.</span></h4>
+             <h4>Speaker: <span class="blue">Irving Washington, FASAE, CAE </span></h4>
+           </div>
+           <div class="schedule-block">
+             <h4>Time: <span class="blue">10:05 AM - 11:00 AM SST</span></h4>
+             <h4>Time: <span class="blue">10:05 AM - 11:00 AM ET</span></h4>
+             <h4>Duration: <span class="blue">55 Minutes</span></h4>
+             <h4>Activities: <span class="blue">Creating Vibrant Connections and Inspiring Teams</span></h4>
+           </div>
+           <div class="schedule-block">
+             <h4>Time: <span class="blue">11:00 AM - 11:15 AM SST</span></h4>
+             <h4>Time: <span class="blue">11:00 AM - 11:15 AM ET</span></h4>
+             <h4>Duration: <span class="blue">15 Minutes</span></h4>
+             <h4>Intermission: <span class="blue">Energize and Recharge</span></h4>
+           </div>
+           <div class="schedule-block">
+             <h4>Time: <span class="blue">11:15 AM - 11:55 PM SST</span></h4>
+             <h4>Time: <span class="blue">11:15 PM - 11:55 AM ET</span></h4>
+             <h4>Duration: <span class="blue">40 Minutes</span></h4>
+             <h4>Leadership Update: <span class="blue">ICF Engage - Fostering Strong Communities</span></h4>
+           </div>
+           <div class="schedule-block">
+             <h4>Time: <span class="blue">11:55 AM - 12:00 PM SST</span></h4>
+             <h4>Time: <span class="blue">11:55 PM - 12:00 AM ET</span></h4>
+             <h4>Duration: <span class="blue">5 Minutes</span></h4>
+             <h4 class="blue">GLF Closing and Key Takeaways</h4>
+           </div>
+       </div>
+       <div class="calendar-container">
+        <h4 class="blue">Click the Calendar Icon below to Add this Event to your Calendar</h4>
+         <a href="https://e.plusthis.com/r/5472-KG888a1PI5Ync4wKt1mGPd7q1BqXuSRZO27M5F7S/calendar?calType=ics&amp;Id=~Contact.Id~"><img id="outlook" src="https://res.cloudinary.com/apideck/image/upload/v1686755263/marketplaces/cjfiejqup3y6m09322stelgxd/listings/Outlook-Calendar-Logo_dkmwml.png"></a>
+         <a href="https://e.plusthis.com/r/5472-KG888a1PI5Ync4wKt1mGPd7q1BqXuSRZO27M5F7S/calendar?calType=google&amp;Id=~Contact.Id~" target="_blank"><img id="google" src="https://static-00.iconduck.com/assets.00/google-calendar-icon-2048x2048-2mlvsa6u.png"></a>
+       </div>
+       <!-- Day 2 Schedule End -->
+     </div>
+     <!-- Content Block End -->
+     <br>
+ 
+   </div><!-- Content End -->
+ </div><!-- Container End -->
+ 
+ 
+ <script>
+  document.getElementById("schedule-button1").addEventListener("click", function() {
+  var content = document.getElementById("schedule1");
+  if (content.style.display === "block") {
+      content.style.display = "none";
+  } else {
+      content.style.display = "block";
+  }
+});
+
+document.getElementById("schedule-button2").addEventListener("click", function() {
+  var content = document.getElementById("schedule2");
+  if (content.style.display === "block") {
+      content.style.display = "none";
+  } else {
+      content.style.display = "block";
+  }
+});
+
+</script>
+
+<head></head>
+<body></body>
